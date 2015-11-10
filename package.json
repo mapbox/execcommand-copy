@@ -1,0 +1,22 @@
+{
+  "name": "execcommand-copy",
+  "version": "1.0.0",
+  "description": "copy text into a clipboard with javascript and execCommand",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js && tape test.js",
+    "docs": "documentation-readme README.md -s API"
+  },
+  "keywords": [
+    "execCommand",
+    "copy",
+    "test"
+  ],
+  "author": "Tom MacWright",
+  "license": "ISC",
+  "devDependencies": {
+    "documentation-readme": "^2.1.0",
+    "eslint": "^1.9.0",
+    "tape": "^4.2.2"
+  }
+}
