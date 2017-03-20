@@ -1,10 +1,11 @@
 {
   "name": "execcommand-copy",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "copy text into a clipboard with javascript and execCommand",
   "main": "index.js",
   "scripts": {
     "test": "eslint index.js && tape test.js",
+    "changelog": "standard-changelog -i changelog.md",
     "docs": "documentation-readme README.md -s API"
   },
   "keywords": [
@@ -17,6 +18,7 @@
   "devDependencies": {
     "documentation-readme": "^2.1.0",
     "eslint": "^1.9.0",
+    "standard-changelog": "^1.0.1",
     "tape": "^4.2.2"
   },
   "repository": {
