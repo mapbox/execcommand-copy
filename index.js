@@ -28,7 +28,7 @@ function available() {
  * });
  */
 function copy(text) {
-  var fakeElem = document.body.appendChild(document.createElement('input'));
+  var fakeElem = document.body.appendChild(document.createElement('textarea'));
   fakeElem.style.position = 'absolute';
   fakeElem.style.left = '-9999px';
   fakeElem.setAttribute('readonly', '');
