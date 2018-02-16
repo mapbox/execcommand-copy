@@ -5,11 +5,15 @@
  * @returns {boolean} whether the browser support text
  */
 function available() {
-  // https://gist.github.com/jonrohan/81085b119d16cdd7868a
-  var browser = navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/);
+  // https://developer.mozilla.org/en-US/docs/Web/HTTP/Browser_detection_using_the_user_agent
+  // https://developer.mozilla.org/en-US/docs/Web/API/Window/navigator
+  // https://developer.mozilla.org/en-US/docs/Web/API/Document/execCommand
+  var browser = navigator.userAgent.match(/(Firefox|Chrome|Safari|Opera)\/(\d+)/);
   return 'execCommand' in document && !!(browser && {
     Firefox: parseInt(browser[2], 10) >= 41,
-    Chrome: parseInt(browser[2], 10) >= 43
+    Chrome: parseInt(browser[2], 10) >= 43,
+    Safari: parseInt(browser[2], 10) >= 10,
+    Opera: parseInt(browser[2], 10) >= 29
   }[browser[1]]);
 }
 
