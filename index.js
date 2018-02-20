@@ -4,9 +4,7 @@
  * @returns {boolean} whether or not the browser supports copy
  */
 function available() {
-  let isCopySupported = !!document.queryCommandSupported;
-  isCopySupported = isCopySupported && !!document.queryCommandSupported('copy');
-  return isCopySupported;
+  return !!document.queryCommandSupport && document.queryCommandSupport('copy');
 }
 
 /**
