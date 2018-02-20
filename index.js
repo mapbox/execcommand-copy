@@ -1,16 +1,10 @@
 /**
- * Detect whether a browser supports the execCommand interface
- * for copying text.
+ * Detect if there is browser support for the copy command feature.
  *
- * @returns {boolean} whether the browser support text
+ * @returns {boolean} whether or not the browser supports copy
  */
 function available() {
-  // https://gist.github.com/jonrohan/81085b119d16cdd7868a
-  var browser = navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/);
-  return 'execCommand' in document && !!(browser && {
-    Firefox: parseInt(browser[2], 10) >= 41,
-    Chrome: parseInt(browser[2], 10) >= 43
-  }[browser[1]]);
+  return !!document.queryCommandSupport && document.queryCommandSupport('copy');
 }
 
 /**
