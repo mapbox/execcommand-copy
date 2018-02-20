@@ -1,6 +1,6 @@
 {
   "name": "execcommand-copy",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "copy text into a clipboard with javascript and execCommand",
   "main": "index.js",
   "scripts": {
