@@ -1,3 +1,8 @@
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/mapbox/execcommand-copy/compare/v1.2.0...v1.3.0) (2018-02-19)
+
+* Fix queryCommandSupported typo ([820fa53](https://github.com/mapbox/execcommand-copy/commit/820fa53))
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/mapbox/execcommand-copy/compare/v1.1.0...v1.2.0) (2018-02-19)
 
