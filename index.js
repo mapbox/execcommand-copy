@@ -4,7 +4,7 @@
  * @returns {boolean} whether or not the browser supports copy
  */
 function available() {
-  return !!document.queryCommandSupport && document.queryCommandSupport('copy');
+  return !!document.queryCommandSupported && document.queryCommandSupported('copy');
 }
 
 /**
